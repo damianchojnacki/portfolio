@@ -1,0 +1,169 @@
+body{
+    font-family: 'Lato', sans-serif;
+    color: #eeeeee;
+}
+
+.fp-controlArrow{
+    transform: scale(.75);
+    opacity: .33;
+    transition: .3s;
+}
+
+.fp-controlArrow:hover{
+    opacity: 1;
+}
+
+.fp-controlArrow.fp-prev{
+    left: 60px;
+}
+
+.fp-controlArrow.fp-next{
+    right: 60px;
+}
+
+.fp-viewing-welcome #fp-nav ul li a span, .fp-viewing-technologies #fp-nav ul li a span{
+    background: #eeeeee;
+}
+
+h1, h2, h3{
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.code{
+    font-family: Consolas;
+    text-align: center;
+}
+
+.code img{
+    width: 6rem;
+    margin: 0 auto;
+}
+
+.lightred{
+    color: #ff3982;
+}
+
+.lightgreen{
+    color: #57ff35;
+}
+
+.lightorange{
+    color: #ffc935;
+}
+
+.lightblue{
+    color: #35f2ff;
+}
+
+.arrow-down{
+    text-align: center;
+    color: #555560;
+    font-size: 3rem;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-decoration: none;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(15px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.tech__header{
+    margin-bottom: 4rem;
+}
+
+.tech__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tech__flex > div{
+    width: 25%;
+    margin: 1rem 0;
+}
+
+.code-brackets{
+    flex-direction: column;
+    text-align: left;
+    display: inline-flex;
+}
+
+.code-brackets p{
+    transform: translateX(30px);
+}
+
+.code-brackets p::before{
+    content: "{";
+    display: block;
+    transform: translateX(-30px);
+}
+
+.code-brackets p::after{
+    content: "}";
+    display: block;
+    transform: translateX(-30px);
+}
+
+@media (min-width: 768px) {
+    .code span + span{
+        margin-left: 1rem;
+    }
+
+    .code-brackets span + span{
+        margin-left: inherit;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-flex{
+        flex-direction: column;
+        text-align: left;
+        display: inline-flex;
+        transform: translateX(30px);
+    }       
+
+    .mobile-flex span:first-of-type, .mobile-flex span:last-of-type{
+        transform: translateX(-30px);
+    }
+
+    #fp-nav{
+        left: 50%;
+        top: 2rem;
+        transform: translateX(-50%);
+        right: auto !important;
+    }
+
+    #fp-nav ul{
+        display: flex;
+    }
+}

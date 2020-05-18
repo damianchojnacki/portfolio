@@ -6,14 +6,85 @@
     <meta name="author" content="Damian Chojnacki"/>
 	<meta name="description" content="Fullstack, Backend Web developer. Known languages - PHP, JavaScript, MySQL. Feel free to ask me for partnership. Also, you can order me build your website service of dreams. I will do small project like company website, but also complex web application."/>
     <title>Damian Chojnacki - Web Developer - Portfolio - PHP, Javascript, Laravel, ReactJS</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js"/></script>
+    <script src="./fullpage.min.js"/></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="./fullpage.min.css" rel="stylesheet"/>
     <link href="./style.css" rel="stylesheet"/>
 </head>
 <body>
     <div id="fullpage">
-        <div class="section">Hello</div>
-        <div class="section">Technologies</div>
-        <div class="section">
+        <div class="section" data-anchor="welcome">
+            <div class="code">
+                <h1>&lt;<span class="lightred">Damian</span><span class="lightgreen">Chojnacki</span>/&gt;</h1>
+                <p class="flex mobile-flex">
+                    <span>{</span> 
+                    <span>
+                        "Full-stack Developer": <span class="lightorange">true</span>,
+                    </span>
+                    <span>
+                        "Back-end Developer": <span class="lightorange">true</span>
+                    </span>
+                    <span>}</span>
+                </p>
+            </div>
+            <a href="#about" class="arrow-down">&#x2B9F;</a>
+        </div>
+        <div class="section" data-anchor="about">About me</div>
+        <div class="section tech" data-anchor="technologies">
+            <div class="container">
+                <h2 class="tech__header">Technologies I use</h2>
+                
+                <div class="tech__flex">
+                    <div class="code code-brackets">
+                        <img src="./images/091-php.svg"/>
+                        <p>php: <span class="lightgreen">"advanced"</span></p>
+                    </div>
+    
+                    <div class="code code-brackets">
+                        <img src="./images/033-js-1.svg"/>
+                        <p>javascript: <span class="lightgreen">"advanced"</span></p>
+                    </div>
+    
+                    <div class="code code-brackets">
+                        <img src="./images/089-html.svg"/>
+                        <p>html: <span class="lightgreen">"advanced"</span></p>
+                    </div>
+
+                    <div class="code code-brackets">
+                        <img src="./images/044-css-1.svg"/>
+                        <p>css: <span class="lightgreen">"advanced"</span></p>
+                    </div>
+
+                    <div class="code code-brackets">
+                        <img src="./images/laravel.jpg"/>
+                        <p>laravel: <span class="lightgreen">"regular"</span></p>
+                    </div>
+
+                    <div class="code code-brackets">
+                        <img src="./images/react.png"/>
+                        <p>react: <span class="lightgreen">"regular"</span></p>
+                    </div>
+                    
+                    <!--
+                    <div class="code code-brackets">
+                        <img src="./images/086-sql.svg"/>
+                        <p>sql: <span class="lightgreen">"regular"</span></p>
+                    </div>
+                    -->
+
+                    <div class="code code-brackets">
+                        <img src="./images/058-twig.svg"/>
+                        <p>twig: <span class="lightgreen">"advanced"</span></p>
+                    </div>
+
+                    <div class="code code-brackets">
+                        <img src="./images/093-sass.svg"/>
+                        <p>sass: <span class="lightgreen">"regular"</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" data-anchor="projects">
             <div class="slide">
                 Project 1
             </div>
@@ -22,14 +93,14 @@
                 Project 2
             </div>
         </div>
-        <div class="section">Footer</div>
-    </div>
+    </&lt;Damian>
     <script>
         new fullpage('#fullpage', {
             licenseKey: null,
-            autoScrolling:true,
-            scrollHorizontally: true,
-            slidesNavigation: true,
+            navigation: true,
+            anchors: ['welcome', 'about', 'technologies', 'projects'],
+            navigationTooltips: ['Welcome', 'About me', 'Technologies', 'Projects'],
+            sectionsColor: ['#333340', '#4BBFC3', '#353333', '#ccddff'],
         });
     </script>
 </body>
