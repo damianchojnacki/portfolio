@@ -25,7 +25,7 @@ body{
     background: #eeeeee;
 }
 
-h1, h2, h3{
+h1, h2{
     text-align: center;
     letter-spacing: 2px;
     font-weight: normal;
@@ -95,7 +95,7 @@ h2{
 }
 
 .tech__header{
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .tech__flex{
@@ -145,15 +145,27 @@ h2{
 }
 
 @media (max-width: 768px) {
+    h1, h2{
+        font-size: 1.5rem;
+    }
+
     .mobile-flex{
         flex-direction: column;
         text-align: left;
         display: inline-flex;
-        transform: translateX(30px);
+        transform: translateX(20px);
     }       
 
     .mobile-flex span:first-of-type, .mobile-flex span:last-of-type{
-        transform: translateX(-30px);
+        transform: translateX(-20px);
+    }
+
+    .code-brackets p{
+        transform: translateX(20px);
+    }
+    
+    .code-brackets p::before, .code-brackets p::after{
+        transform: translateX(-20px);
     }
 
     #fp-nav{
@@ -165,5 +177,22 @@ h2{
 
     #fp-nav ul{
         display: flex;
+    }
+
+    .code img{
+        height: 3rem;
+        width: auto;
+    }
+
+    .tech__header{
+        margin-bottom: 2rem;
+        padding-top: 2.5rem;
+    }
+
+    .tech__flex > div{
+        font-size: .75rem;
+        width: calc(50% - 1rem);
+        padding: 0 .5rem;
+        margin: .5rem 0;
     }
 }
