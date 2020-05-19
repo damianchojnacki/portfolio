@@ -6,7 +6,7 @@
     <meta name="author" content="Damian Chojnacki"/>
 	<meta name="description" content="Fullstack, Backend Web developer. Known languages - PHP, JavaScript, MySQL. Feel free to ask me for partnership. Also, you can order me build your website service of dreams. I will do small project like company website, but also complex web application."/>
     <title>Damian Chojnacki - Web Developer - Portfolio - PHP, Javascript, Laravel, ReactJS</title>
-    <script src="./fullpage.min.js"/></script>
+    <script src="./fullpage.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link href="./fullpage.min.css" rel="stylesheet"/>
     <link href="./style.css" rel="stylesheet"/>
@@ -15,21 +15,22 @@
     <div id="fullpage">
         <div class="section" data-anchor="welcome">
             <div class="code">
-                <h1>&lt;<span class="lightred">Damian</span><span class="lightgreen">Chojnacki</span>/&gt;</h1>
+                <h1>&lt;<span class="lightred">Damian</span> <span class="lightgreen">Chojnacki</span>/&gt;</h1>
                 <p class="flex mobile-flex">
-                    <span>{</span> 
                     <span>
                         "Full-stack Developer": <span class="lightorange">true</span>,
                     </span>
                     <span>
                         "Back-end Developer": <span class="lightorange">true</span>
                     </span>
-                    <span>}</span>
                 </p>
             </div>
             <a href="#about" class="arrow-down">&#x2B9F;</a>
         </div>
-        <div class="section" data-anchor="about">About me</div>
+        <div class="section about" data-anchor="about">
+            <h2>About me</h2>
+            
+        </div>
         <div class="section tech" data-anchor="technologies-main">
             <h2 class="tech__header">Technologies I use</h2>
             
@@ -82,8 +83,8 @@
                 </div>
             </div>
         </div>
-        <div class="section" data-anchor="technologies-other">
-            <h2>Other technologies</h2>
+        <div class="section tech" data-anchor="technologies-other">
+            <h2 class="tech__header">Other technologies</h2>
 
             <div class="tech__flex">
                 <div>
@@ -140,13 +141,27 @@
                 </div>
             </div>
         </div>
-        <div class="section" data-anchor="projects">
+        <div class="section projects" data-anchor="projects">
             <div class="slide">
-                Project 1
+                <div class="projects__description">
+                    <h2>Project 1</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero eaque dolorum voluptatibus repellat dolor, ipsam quia corrupti animi eveniet nostrum culpa. Amet eligendi odit quo mollitia velit, saepe aut laudantium.</p>
+                    <div class="projects__links">
+                        <a href="#">Live</a>
+                        <a href="#">Github</a>
+                    </div>
+                </div>
             </div>
 
             <div class="slide">
-                Project 2
+                <div class="projects__description">
+                    <h2>Project 2</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero eaque dolorum voluptatibus repellat dolor, ipsam quia corrupti animi eveniet nostrum culpa. Amet eligendi odit quo mollitia velit, saepe aut laudantium.</p>
+                    <div class="projects__links">
+                        <a href="#">Live</a>
+                        <a href="#">Github</a>
+                    </div>
+                </div>
             </div>
         </div>
     </&lt;Damian>
@@ -156,7 +171,7 @@
             navigation: true,
             anchors: ['welcome', 'about', 'technologies-main', 'technologies-other', 'projects'],
             navigationTooltips: ['Welcome', 'About me', 'Main technologies', 'Other technologies', 'Projects'],
-            sectionsColor: ['#333340', '#4BBFC3', '#353333', '#353333', '#ccddff'],
+            sectionsColor: ['#333340', 'transparent', '#393333', '#393333', '#333333'],
         });
     </script>
 </body>
