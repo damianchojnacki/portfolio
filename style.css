@@ -48,6 +48,7 @@ h2{
 .code{
     font-family: Consolas;
     text-align: center;
+    font-weight: normal;
 }
 
 .code img{
