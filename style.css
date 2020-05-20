@@ -31,6 +31,14 @@ body{
     background: #eeeeee;
 }
 
+.fp-viewing-about #fp-nav ul li a span{
+    background: #222222;
+}
+
+.fp-viewing-about #fp-nav ul li .fp-tooltip{
+    color: #222222;
+}
+
 h1, h2{
     text-align: center;
     letter-spacing: 2px;
@@ -74,8 +82,6 @@ h2{
 
 .arrow-down{
     text-align: center;
-    color: #555560;
-    font-size: 3rem;
     animation-name: scroll;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -84,6 +90,10 @@ h2{
     bottom: 50px;
     width: 100%;
     text-decoration: none;
+}
+
+.arrow-down img{
+    height: 2rem;
 }
 
 @keyframes scroll{
@@ -120,6 +130,17 @@ h2{
     display: inline;
     margin-left: 1rem;
 } 
+
+.about__description{
+    background: #eeeeee;
+    color: #222222;
+    padding: 4rem;
+    font-size: 1.25rem;
+    text-align: center;
+    box-shadow: 0 0 10px 5px black;
+    margin-bottom: 5rem;
+    line-height: 1.75rem;
+}
 
 .tech__header{
     margin-bottom: 4rem;
@@ -168,6 +189,13 @@ h2{
     background-repeat: no-repeat;
 }
 
+.projects__header{
+    position: absolute;
+    width: 100%;
+    padding-top: 5rem;
+    z-index: 2;
+}
+
 .projects__description{
     width: 30%;
     margin-left: auto;
@@ -186,6 +214,30 @@ h2{
     color: inherit;
     display: block;
     text-align: center;
+}
+
+@media (max-width: 1280px) {
+    .code img{
+        height: 5rem;
+        width: auto;
+    }
+
+    .tech__flex > div{
+        margin: .75rem 0;
+    }
+
+    .projects .slide{
+        background-size: 36vw;
+        background-position: 20% 70%;
+    }
+
+    .projects__header{
+        padding-top: 1rem;
+    }
+
+    .projects__description{
+        margin-right: 12%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -228,6 +280,10 @@ h2{
         display: flex;
     }
 
+    .fp-controlArrow{
+        top: 90%;
+    }
+
     .code img{
         height: 3rem;
         width: auto;
@@ -243,5 +299,20 @@ h2{
         width: calc(50% - 1rem);
         padding: 0 .5rem;
         margin: .5rem 0;
+    }
+
+    .projects .slide{
+        background-size: 90vw;
+        background-position: center 25%;
+    }
+
+    .projects__header{
+        padding-top: 3rem;
+    }
+
+    .projects__description{
+        margin-right: auto;
+        margin-top: 75%;
+        width: 80%;
     }
 }
