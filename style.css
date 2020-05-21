@@ -185,14 +185,18 @@ h2{
 .projects .slide{
     background-image: url(./images/screen.png);
     background-size: 42vw;
-    background-position: 20% center;
+    background-position: 20% 60%;
     background-repeat: no-repeat;
+}
+
+.projects .slide:nth-child(1){
+    background-image: url(./images/eloboost360.png);
 }
 
 .projects__header{
     position: absolute;
     width: 100%;
-    padding-top: 5rem;
+    padding-top: 3rem;
     z-index: 2;
 }
 
