@@ -196,7 +196,7 @@ h2{
 .projects__header{
     position: absolute;
     width: 100%;
-    padding-top: 3rem;
+    margin-top: 3rem;
     z-index: 2;
 }
 
@@ -220,6 +220,41 @@ h2{
     text-align: center;
 }
 
+.contact__form{
+    background: #eeeeee;
+    color: #222222;
+    padding: 2rem;
+    font-size: 1.25rem;
+    text-align: center;
+    box-shadow: 0 0 10px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__label, .contact__field, .contact__submit{
+    display: block;
+    width: 50%;
+    margin: .5rem 0;
+    box-sizing: border-box;
+}
+
+.contact__field, .contact__submit{
+    padding: .5rem 1rem;
+    font-family: inherit;
+    background-color: white;
+    border: solid 2px silver;
+}
+
+.contact__submit{
+    font-size: inherit;
+}
+
+textarea.contact__field{
+    min-height: 20vh;
+    resize: vertical;
+}
+
 @media (max-width: 1280px) {
     .code img{
         height: 5rem;
@@ -230,13 +265,13 @@ h2{
         margin: .75rem 0;
     }
 
+    .tech__header{
+        margin-bottom: 3rem;
+    }
+
     .projects .slide{
         background-size: 36vw;
         background-position: 20% 70%;
-    }
-
-    .projects__header{
-        padding-top: 1rem;
     }
 
     .projects__description{

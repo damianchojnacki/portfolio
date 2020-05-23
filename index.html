@@ -147,7 +147,7 @@
         <div class="section projects" data-anchor="projects">
             <h2 class="projects__header">My projects</h2>
 
-            <div class="slide" data-website="eloboost360">
+            <div class="slide">
                 <div class="projects__description">
                     <h3>EloBoost360</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero eaque dolorum voluptatibus repellat dolor, ipsam quia corrupti animi eveniet nostrum culpa. Amet eligendi odit quo mollitia velit, saepe aut laudantium.</p>
@@ -169,7 +169,19 @@
                 </div>
             </div>
         </div>
-    </&lt;Damian>
+        <div class="section contact" data-anchor="contact">
+            <h2>Wanna contact me?</h2>
+            <form class="contact__form" action="https://formspree.io/xknqodbr" method="POST">
+                <label for="email" class="contact__label">Your email</label>
+                <input type="text" class="contact__field" name="_replyto" id="email">
+
+                <label for="message" class="contact__label">Your message</label>
+                <textarea name="message" class="contact__field" id="message"></textarea>
+                                
+                <button type="submit" class="contact__submit">Send</button>
+            </form>
+        </div>
+    </h2>
     <script>
         new fullpage('#fullpage', {
             licenseKey: null,
