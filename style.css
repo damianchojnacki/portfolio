@@ -134,12 +134,45 @@ h2{
 .about__description{
     background: #eeeeee;
     color: #222222;
-    padding: 4rem;
-    font-size: 1.25rem;
+    padding: 4rem 20%;
+    font-size: 2rem;
     text-align: center;
     box-shadow: 0 0 10px 5px black;
-    margin-bottom: 5rem;
-    line-height: 1.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__link{
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    color: inherit;
+    border: solid 2px #222222;
+    font-size: 1.5rem;
+    transition: .5s;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.about__link img{
+    max-height: 1.25rem;
+    transform: rotate(-90deg);
+    margin-left: 1rem;
+    transition: .5s;
+}
+
+.about__link:hover{
+    background: #222222;
+    color: #eeeeee;
+}
+
+.about__link:hover img{
+    filter: invert() contrast(200%) grayscale(100%);
+    transform: none;
 }
 
 .tech__header{
@@ -189,14 +222,26 @@ h2{
     background-repeat: no-repeat;
 }
 
-.projects .slide:nth-child(1){
+.projects .slide.eloboost360{
     background-image: url(./images/eloboost360.png);
+}
+
+.projects .slide.drmenswear{
+    background-image: url(./images/drmenswear.png);
+}
+
+.projects .slide.shop-template{
+    background-image: url(./images/shop-template.png);
+}
+
+.projects .slide.heroes-adventures{
+    background-image: url(./images/heroes-adventures.png);
 }
 
 .projects__header{
     position: absolute;
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 5%;
     z-index: 2;
 }
 
@@ -205,6 +250,19 @@ h2{
     margin-left: auto;
     margin-right: 10%;
     text-align: justify;
+}
+
+.projects__techs{
+    display: flex;
+}
+
+.projects__techs img{
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.projects__techs img+img{
+    margin-left: 2rem;
 }
 
 .projects__links{
@@ -218,15 +276,30 @@ h2{
     color: inherit;
     display: block;
     text-align: center;
+    font-weight: normal;
+    transition: .3s;
+    padding: 1rem 0;
+    background: #00000050;
+}
+
+.projects__links a+a{
+    margin-left: 1rem;
+}
+
+.projects__links a:not(.disabled):hover{
+    background: #00000090;
+}
+
+.projects__links a.disabled{
+    cursor: default;
 }
 
 .contact__form{
-    background: #eeeeee;
-    color: #222222;
+    background: #00000066;
+    color: #eeeeee;
     padding: 2rem;
     font-size: 1.25rem;
     text-align: center;
-    box-shadow: 0 0 10px 5px black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -242,8 +315,10 @@ h2{
 .contact__field, .contact__submit{
     padding: .5rem 1rem;
     font-family: inherit;
-    background-color: white;
-    border: solid 2px silver;
+    background-color: #ffffff15;
+    border: none;
+    color: #eeeeee;
+    font-size: 1rem;
 }
 
 .contact__submit{
@@ -255,10 +330,20 @@ textarea.contact__field{
     resize: vertical;
 }
 
+@media (max-width: 1600px) {
+    .about__description{
+        padding: 4rem 10%;
+    }
+}
+
 @media (max-width: 1280px) {
     .code img{
         height: 5rem;
         width: auto;
+    }
+
+    .about__description{
+        padding: 4rem 8%;
     }
 
     .tech__flex > div{
@@ -328,6 +413,17 @@ textarea.contact__field{
         width: auto;
     }
 
+    .about__description{
+        flex-direction: column;
+        font-size: 1.5rem;
+        padding: 4rem 5%;
+    }
+
+    .about__link{
+        margin-top: 1rem;
+        font-size: 1.25rem;
+    }
+
     .tech__header{
         margin-bottom: 2rem;
         padding-top: 2.5rem;
@@ -341,8 +437,8 @@ textarea.contact__field{
     }
 
     .projects .slide{
-        background-size: 90vw;
-        background-position: center 25%;
+        background-size: 80vw;
+        background-position: center 30%;
     }
 
     .projects__header{
@@ -354,4 +450,9 @@ textarea.contact__field{
         margin-top: 75%;
         width: 80%;
     }
+
+    .contact__label, .contact__field, .contact__submit{
+        width: 90%;
+    }
+    
 }
