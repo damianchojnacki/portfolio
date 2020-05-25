@@ -39,6 +39,10 @@ body{
     color: #222222;
 }
 
+.section{
+    transition: .3s;
+}
+
 h1, h2{
     text-align: center;
     letter-spacing: 2px;
@@ -51,6 +55,33 @@ h3, h4{
 
 h2{
     font-size: 2rem;
+}
+
+.github{
+    background: #eeeeee;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    height: 1.5rem;
+    padding: .5rem;
+    cursor: pointer;    
+    z-index: 10;
+    transition: .3s;
+}
+
+.github img{
+    max-height: 100%;
+}
+
+.github:hover{
+    transform: scale(1.1);
+}
+
+.github:hover ~ .section{
+    filter: brightness(.5);
+    background: #00000050;
 }
 
 .code{
@@ -175,44 +206,8 @@ h2{
     transform: none;
 }
 
-.tech__header{
-    margin-bottom: 4rem;
-}
-
-.tech__flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.tech__flex > div{
-    width: 25%;
-    margin: 1rem 0;
-}
-
-.code-brackets{
-    flex-direction: column;
-    text-align: left;
-    display: inline-flex;
-}
-
-.code-brackets p{
-    transform: translateX(30px);
-}
-
-.code-brackets p::before{
-    content: "{";
-    display: block;
-    transform: translateX(-30px);
-}
-
-.code-brackets p::after{
-    content: "}";
-    display: block;
-    transform: translateX(-30px);
+.swipe{
+    display: none;
 }
 
 .projects .slide{
@@ -294,6 +289,46 @@ h2{
     cursor: default;
 }
 
+.tech__header{
+    margin-bottom: 4rem;
+}
+
+.tech__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.tech__flex > div{
+    width: 25%;
+    margin: 1rem 0;
+}
+
+.code-brackets{
+    flex-direction: column;
+    text-align: left;
+    display: inline-flex;
+}
+
+.code-brackets p{
+    transform: translateX(30px);
+}
+
+.code-brackets p::before{
+    content: "{";
+    display: block;
+    transform: translateX(-30px);
+}
+
+.code-brackets p::after{
+    content: "}";
+    display: block;
+    transform: translateX(-30px);
+}
+
 .contact__form{
     background: #00000066;
     color: #eeeeee;
@@ -332,7 +367,7 @@ textarea.contact__field{
 
 @media (max-width: 1600px) {
     .about__description{
-        padding: 4rem 10%;
+        padding: 4rem 14%;
     }
 }
 
@@ -343,7 +378,7 @@ textarea.contact__field{
     }
 
     .about__description{
-        padding: 4rem 8%;
+        padding: 4rem 10%;
     }
 
     .tech__flex > div{
@@ -365,6 +400,27 @@ textarea.contact__field{
 }
 
 @media (max-width: 768px) {
+    .fp-controlArrow{
+        display: none;
+    }
+
+    .swipe{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1rem;
+        height: 2rem;
+    }
+
+    .fp-viewing-about #fp-nav ul li a span{
+        background: #eeeeee;
+    }
+    
+    .fp-viewing-about #fp-nav ul li .fp-tooltip{
+        color: #eeeeee;
+    }
+
     h1, h2{
         font-size: 1.5rem;
     }
@@ -451,8 +507,16 @@ textarea.contact__field{
         width: 80%;
     }
 
+    .projects__techs img{
+        height: 1.75rem;
+        margin-bottom: .5rem;
+    }
+    
+    .projects__techs img+img{
+        margin-left: 1rem;
+    }
+
     .contact__label, .contact__field, .contact__submit{
         width: 90%;
     }
-    
 }
