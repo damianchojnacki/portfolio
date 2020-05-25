@@ -9,6 +9,7 @@
     <script src="./fullpage.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link href="./fullpage.min.css" rel="stylesheet"/>
+    <link href="./animate.css" rel="stylesheet"/>
     <link href="./style.css?v=4" rel="stylesheet"/>
 </head>
 <body>
@@ -146,7 +147,7 @@
                     <img src="./images/react.png"/>
                     <p>react: <span class="lightgreen">"regular"</span></p>
                 </div>
-
+                
                 <div class="code code-brackets">
                     <img src="./images/twig.svg"/>
                     <p>twig: <span class="lightgreen">"advanced"</span></p>
@@ -230,13 +231,6 @@
             </form>
         </div>
     </h2>
-    <script>
-        new fullpage('#fullpage', {
-            licenseKey: null,
-            navigation: true,
-            anchors: ['welcome', 'about', 'projects', 'technologies-main', 'technologies-other', 'contact'],
-            navigationTooltips: ['Welcome', 'About me', 'Projects', 'Main technologies', 'Other technologies', 'Contact'],
-        });
-    </script>
+    <script src="./animations.js?v=1"></script>
 </body>
 </html>
