@@ -5,7 +5,7 @@
             animation: 'fadeInLeft',
         },
         {
-            element: '.code-brackets',
+            element: '.skills__block:not(.skills__block--secondary)',
             animation: 'fadeInDown',
         },
         {
@@ -46,8 +46,8 @@
     new fullpage('#fullpage', {
         licenseKey: null,
         navigation: true,
-        anchors: ['welcome', 'about', 'projects', 'technologies-main', 'technologies-other', 'contact'],
-        navigationTooltips: ['Welcome', 'About me', 'Projects', 'Main technologies', 'Other technologies', 'Contact'],
+        anchors: ['welcome', 'about', 'projects', 'skills-main', 'skills-secondary', 'contact'],
+        navigationTooltips: ['Welcome', 'About me', 'Projects', 'Main skills', 'Secondary skills', 'Contact'],
         onLeave: function (origin, destination, direction) {
             if (destination.index == 1) animate(animated[0]); 
             if (destination.index == 3) animate(animated[1]); 

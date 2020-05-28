@@ -290,22 +290,54 @@ h2{
     cursor: default;
 }
 
-.tech__header{
-    margin-bottom: 4rem;
+.skills__header{
+    margin-bottom: 2rem;
 }
 
-.tech__flex{
+.skills__flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
-    width: 90%;
     margin: 0 auto;
 }
 
-.tech__flex > div{
-    width: 25%;
-    margin: 1rem 0;
+.skills__flex--secondary{
+    width: 40%;
+}
+
+.skills__block{
+    margin: 2rem;
+    position: relative;
+}
+
+.skills__block img{
+    height: 6rem;
+    border-radius: 50%;
+}
+
+.skills__block img + span{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 1rem);
+    transform: translateX(-50%);
+    transition: .3s;
+}
+
+.skills__block img:hover + span{
+    visibility: visible;
+    opacity: 1;
+}
+
+.skills__block--secondary img{
+    height: 4rem;
+    border-radius: 0;
+}
+
+.skills__block--secondary img + span{
+    top: 100%;
 }
 
 .code-brackets{
@@ -481,16 +513,29 @@ textarea.contact__field{
         font-size: 1.25rem;
     }
 
-    .tech__header{
-        margin-bottom: 2rem;
-        padding-top: 2.5rem;
+    .skills__header{
+        margin-bottom: 0;
     }
 
-    .tech__flex > div{
-        font-size: .75rem;
-        width: calc(50% - 1rem);
-        padding: 0 .5rem;
-        margin: .5rem 0;
+    .skills__block img{
+        height: 4rem;
+    }
+
+    .skills__block img + span{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .skills__flex--secondary{
+        width: 90%;
+    }
+
+    .skills__block--secondary{
+        margin: 1.5rem;
+    }
+
+    .skills__block--secondary img{
+        height: 2rem;
     }
 
     .projects .slide{
