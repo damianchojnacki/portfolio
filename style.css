@@ -163,6 +163,14 @@ h2{
     margin-left: 1rem;
 } 
 
+#subtitle{
+    opacity: 0;
+}
+
+#subtitle.delay{
+    opacity: 1;
+}
+
 .about__description{
     background: #eeeeee;
     color: #222222;
@@ -387,10 +395,20 @@ h2{
     border: none;
     color: #eeeeee;
     font-size: 1rem;
+    transition: .3s;
+}
+
+.contact__field:focus{
+    background-color: #ffffff20;
 }
 
 .contact__submit{
     font-size: inherit;
+    cursor: pointer;
+}
+
+.contact__submit:hover{
+    background-color: #ffffff20;
 }
 
 textarea.contact__field{
@@ -412,14 +430,6 @@ textarea.contact__field{
 
     .about__description{
         padding: 4rem 10%;
-    }
-
-    .tech__flex > div{
-        margin: .75rem 0;
-    }
-
-    .tech__header{
-        margin-bottom: 3rem;
     }
 
     .projects .slide{
@@ -544,7 +554,9 @@ textarea.contact__field{
     }
 
     .projects__header{
-        padding-top: 3rem;
+        padding-top: 0;
+        margin: 0;
+        top: 10%;
     }
 
     .projects__description{

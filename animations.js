@@ -1,16 +1,20 @@
 (function(){
     const animated = [
         {
+            element: '#title',
+            animation: 'bounceInDown',
+        },
+        {
+            element: '#subtitle',
+            animation: 'fadeIn',
+        },
+        {
             element: '.about__description',
             animation: 'fadeInLeft',
         },
         {
             element: '.skills__block:not(.skills__block--secondary)',
             animation: 'fadeInDown',
-        },
-        {
-            element: '.contact__button',
-            animation: 'fadeInLeft',
         },
     ];
 
@@ -33,13 +37,10 @@
 
             node.addEventListener('animationend', handleAnimationEnd)
         });
-
-        console.log(element);
     }
 
-    function animate(element) {
-        console.log(element);
-        !element.fired && animateCSS(element.element, element.animation);
+    function animate(element, callback = null) {
+        !element.fired && animateCSS(element.element, element.animation, callback);
         element.fired = true;
     }
 
@@ -49,8 +50,11 @@
         anchors: ['welcome', 'about', 'projects', 'skills-main', 'skills-secondary', 'contact'],
         navigationTooltips: ['Welcome', 'About me', 'Projects', 'Main skills', 'Secondary skills', 'Contact'],
         onLeave: function (origin, destination, direction) {
-            if (destination.index == 1) animate(animated[0]); 
-            if (destination.index == 3) animate(animated[1]); 
+            if (destination.index == 1) animate(animated[2]); 
+            if (destination.index == 3) animate(animated[3]); 
         }
     });
+
+    animate(animated[0]);
+    setTimeout(() => animate(animated[1]), 1000);
 })();
