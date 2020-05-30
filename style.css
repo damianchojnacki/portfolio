@@ -420,6 +420,11 @@ textarea.contact__field{
     .about__description{
         padding: 4rem 14%;
     }
+
+    .projects .slide{
+        background-size: 40vw;
+        background-position: 20% 70%;
+    }
 }
 
 @media (max-width: 1280px) {
@@ -438,7 +443,6 @@ textarea.contact__field{
 
     .projects .slide{
         background-size: 36vw;
-        background-position: 20% 70%;
     }
 
     .projects__description{
