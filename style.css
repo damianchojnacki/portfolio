@@ -432,6 +432,10 @@ textarea.contact__field{
         padding: 4rem 10%;
     }
 
+    .projects__header{
+        margin-top: 4rem;
+    }
+
     .projects .slide{
         background-size: 36vw;
         background-position: 20% 70%;
@@ -439,6 +443,30 @@ textarea.contact__field{
 
     .projects__description{
         margin-right: 12%;
+    }
+
+    .skills__block{
+        margin: 1rem;
+    }
+
+    .skills__block img{
+        height: 4.5rem;
+    }
+
+    .skills__block--secondary{
+        margin: 1rem;
+    }
+
+    .skills__block--secondary img{
+       height: 3rem;
+    }
+
+    .skills__block img + span{
+        top: calc(100% + .5rem);
+    }
+
+    .skills__block--secondary img + span{
+        top: 100%;
     }
 }
 
