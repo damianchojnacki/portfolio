@@ -3,7 +3,7 @@ body{
     color: #eeeeee;
     font-size: calc(10px + .6vw);
     font-weight: lighter;
-    background-image: url(./images/background.png);
+    background-image: url(./images/background.webp);
     background-attachment: fixed; 
     background-position: center; 
     background-size: cover;
