@@ -1,5 +1,5 @@
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #eeeeee;
     font-size: calc(10px + .6vw);
     font-weight: lighter;
@@ -86,7 +86,7 @@ h2{
 }
 
 .code{
-    font-family: Consolas;
+    font-family: 'Fira Mono';
     text-align: center;
     font-weight: normal;
 }
@@ -227,19 +227,23 @@ h2{
 }
 
 .projects .slide.eloboost360{
-    background-image: url(./images/eloboost360.png);
+    background-image: url(./images/eloboost360.webp);
 }
 
 .projects .slide.drmenswear{
-    background-image: url(./images/drmenswear.png);
+    background-image: url(./images/drmenswear.webp);
 }
 
 .projects .slide.shop-template{
-    background-image: url(./images/shop-template.png);
+    background-image: url(./images/shop-template.webp);
+}
+
+.projects .slide.cryptoworld{
+    background-image: url(./images/cryptoworld.webp);
 }
 
 .projects .slide.heroes-adventures{
-    background-image: url(./images/heroes-adventures.png);
+    background-image: url(./images/heroes-adventures.webp);
 }
 
 .projects__header{
@@ -275,7 +279,10 @@ h2{
 }
 
 .projects__links a{
-    width: 50%;
+    width: 100%;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
     text-decoration: none;
     color: inherit;
     display: block;
@@ -308,6 +315,7 @@ h2{
     align-items: baseline;
     flex-wrap: wrap;
     margin: 0 auto;
+    white-space: nowrap;
 }
 
 .skills__flex--secondary{

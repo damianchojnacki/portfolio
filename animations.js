@@ -47,7 +47,7 @@
     new fullpage('#fullpage', {
         licenseKey: null,
         navigation: true,
-        anchors: ['welcome', 'about', 'projects', 'skills-main', 'skills-secondary', 'contact'],
+        anchors: ['welcome', 'about', 'projects', 'skills-primary', 'skills-secondary', 'contact'],
         navigationTooltips: ['Welcome', 'About me', 'Projects', 'Main skills', 'Secondary skills', 'Contact'],
         onLeave: function (origin, destination, direction) {
             if (destination.index == 1) animate(animated[2]); 
