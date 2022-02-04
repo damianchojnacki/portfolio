@@ -441,6 +441,18 @@ textarea.contact__field{
     resize: vertical;
 }
 
+.footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: .75rem;
+}
+
+.footer a{
+    color: #aaaaaa;
+}
+
 @media (max-width: 1600px) {
     .about__description{
         padding: 4rem 14%;
