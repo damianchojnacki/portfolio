@@ -45,7 +45,7 @@
     }
 
     new fullpage('#fullpage', {
-        licenseKey: null,
+        licenseKey: "KrWJVerjsRRnUJT9wcI,sEhs-0PGHholV2w#t",
         navigation: true,
         anchors: ['welcome', 'about', 'projects', 'skills-primary', 'skills-secondary', 'contact'],
         navigationTooltips: ['Welcome', 'About me', 'Projects', 'Main skills', 'Secondary skills', 'Contact'],
