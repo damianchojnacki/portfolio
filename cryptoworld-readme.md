@@ -1,4 +1,4 @@
-<p align="center"><a href="https://cryptoworld.damianchojnacki.com" target="_blank"><img src="https://cryptoworld.damianchojnacki.com/images/logo.png" width="400" style="background:white; border-radius: 1rem; padding: 3rem"></a></p>
+<p align="center"><a href="https://cryptoworld.damianchojnacki.com" target="_blank"><img src="https://cryptoworld.damianchojnacki.com/images/logo-white.png" width="400"></a></p>
 
 <p align="center">
 <a href="#"><img alt="Tests passing" src="https://img.shields.io/badge/Tests-passing-green?style=for-the-badge&logo=github"></a>
@@ -17,7 +17,7 @@ CryptoWorld is a web application built with Laravel and Next.js.
 
 ## Technical features
 - [Documented API using `Scribe`](https://api.cryptoworld.damianchojnacki.com/docs?token=VzCLA3aieOaIEobt9rjSN4j2fV1r44zu)
-- [Admin panel built in Filament](https://api.cryptoworld.damianchojnacki.com/admin?token=VzCLA3aieOaIEobt9rjSN4j2fV1r44zu)
+- [Admin panel built in Filament](https://api.cryptoworld.damianchojnacki.com/admin/login?token=VzCLA3aieOaIEobt9rjSN4j2fV1r44zu)
 - [Health check](https://api.cryptoworld.damianchojnacki.com?token=VzCLA3aieOaIEobt9rjSN4j2fV1r44zu)
 - Websocket crypto price update
 - Unit and Feature `PHPUnit` testing
