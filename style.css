@@ -220,7 +220,6 @@ h2{
 }
 
 .projects .slide{
-    background-image: url(./images/screen.png);
     background-size: 42vw;
     background-position: 20% 60%;
     background-repeat: no-repeat;
@@ -244,6 +243,10 @@ h2{
 
 .projects .slide.heroes-adventures{
     background-image: url(./images/heroes-adventures.webp);
+}
+
+.projects .slide.fleet-tracker{
+    background-image: url(./images/fleet-tracker.webp);
 }
 
 .projects__header{
@@ -480,6 +483,7 @@ textarea.contact__field{
 
     .projects .slide{
         background-size: 36vw;
+        background-position: 20% center;
     }
 
     .projects__description{
