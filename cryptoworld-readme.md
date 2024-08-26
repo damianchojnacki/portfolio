@@ -16,11 +16,12 @@ CryptoWorld is a web application built with Laravel and Next.js.
 - Checking your earnings :)
 
 ## Technical features
-- [Documented API using `Scribe`](https://api.cryptoworld.damianchojnacki.com/docs?token=VzCLA3aieOaIEobt9rjSN4j2fV1r44zu)
-- [Admin panel built in Filament](https://api.cryptoworld.damianchojnacki.com/admin/login?token=VzCLA3aieOaIEobt9rjSN4j2fV1r44zu)
-- [Health check](https://api.cryptoworld.damianchojnacki.com?token=VzCLA3aieOaIEobt9rjSN4j2fV1r44zu)
-- Websocket crypto price update
+- [Documented API using `Scribe`](https://api-cryptoworld.damianchojnacki.com/docs?token=VzCLA3aieOaIEobt9rjSN4j2fV1r44zu)
+- [Admin panel built in Filament](https://api-cryptoworld.damianchojnacki.com/admin/login?token=VzCLA3aieOaIEobt9rjSN4j2fV1r44zu)
+- [Health check](https://api-cryptoworld.damianchojnacki.com?token=VzCLA3aieOaIEobt9rjSN4j2fV1r44zu)
+- Websocket crypto price update (Socket.io)
 - Unit and Feature `PHPUnit` testing
+- PHPStan Static Analysis
 - E2E `Cypress` testing
 
 ## License
