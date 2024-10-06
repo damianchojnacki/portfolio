@@ -27,6 +27,7 @@ export default function ProjectBlock({
                     src={image.src}
                     alt={name}
                     class="max-w-full px-6 mx-auto"
+                    loading="lazy"
                 />
             ) : null}
 
