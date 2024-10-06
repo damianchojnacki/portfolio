@@ -11,11 +11,17 @@ export default function ToggleTheme() {
                 return theme;
             }
 
+            let value: string;
+
             if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-                return "dark";
+                value = "dark";
+            } else {
+                value = "light";
             }
 
-            return "light";
+            setTheme(value);
+
+            return value;
         })();
 
         if (value === "light") {
