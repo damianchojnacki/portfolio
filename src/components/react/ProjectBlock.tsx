@@ -14,15 +14,15 @@ export default function ProjectBlock({
     githubUrl,
 }: ProjectBlockProps) {
     const { ref, isVisible } = useOnScreen<HTMLDivElement>();
-    const desktop = useMediaQuery("(min-width: 640px)");
+    const isDesktop = useMediaQuery("(min-width: 640px)");
 
     return (
         <div
-            className={`sm:flex sm:w-5/6 lg:w-2/3 sm:aspect-[16/9] gap-10 sm:shadow-lg rounded-xl relative bg-cover transition ${isVisible ? "scale-105" : null}`}
-            style={desktop ? { backgroundImage: `url('${image.src}')` } : {}}
+            className={`sm:flex sm:w-5/6 lg:w-2/3 sm:aspect-[16/9] gap-10 sm:shadow-lg rounded-xl relative bg-cover transition ${(isVisible && isDesktop) ? "scale-105" : null}`}
+            style={isDesktop ? { backgroundImage: `url('${image.src}')` } : {}}
             ref={ref}
         >
-            {!desktop ? (
+            {!isDesktop ? (
                 <img src={image.src} alt={name} class="max-w-[93vw] mx-auto" />
             ) : null}
 
