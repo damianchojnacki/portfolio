@@ -1,0 +1,7 @@
+providers = ['staticfile', '...']
+
+[variables]
+  ASTRO_TELEMETRY_DISABLED='true'
+
+[start]
+  cmd = 'unset LD_LIBRARY_PATH && nginx -c /assets/nginx.conf'
