@@ -26,7 +26,7 @@ export default function Hero() {
                 </p>
             </div>
 
-            <div className="absolute bottom-0 mb-10 flex justify-center gap-3 text-black dark:text-white">
+            <div className="absolute bottom-0 mb-10 flex justify-center gap-3 text-white">
                 <a href="#projects">
                     <Button>View my work</Button>
                 </a>
