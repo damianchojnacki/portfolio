@@ -2,7 +2,7 @@ export default function ContactSection() {
     return (
         <section id="contact" class="bg-gray-100 dark:bg-gray-900">
             <form
-                class="py-8 px-4 mx-auto max-w-screen-md"
+                class="py-8 px-6 mx-auto max-w-screen-md"
                 action="https://formspree.io/xknqodbr"
                 method="POST"
             >

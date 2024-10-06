@@ -23,10 +23,10 @@ export default function ProjectBlock({
             ref={ref}
         >
             {!isDesktop ? (
-                <img src={image.src} alt={name} class="max-w-[93vw] mx-auto" />
+                <img src={image.src} alt={name} class="max-w-full px-6 mx-auto" />
             ) : null}
 
-            <div className="flex flex-col justify-center gap-3 z-10 p-10 lg:p-20 sm:bg-opacity-75 sm:bg-black w-full transition duration-200 ease-in sm:opacity-0 hover:opacity-100 rounded-xl text-black dark:text-white sm:text-white">
+            <div className="flex flex-col justify-center gap-3 z-10 p-6 lg:p-20 sm:bg-opacity-75 sm:bg-black w-full transition duration-200 ease-in sm:opacity-0 hover:opacity-100 rounded-xl text-black dark:text-white sm:text-white">
                 <h3 className="text-4xl tracking-tight font-bold flex items-center gap-2">
                     {name}
 
