@@ -2,7 +2,8 @@ import {
     siAstro,
     siBootstrap,
     siCss3,
-    siDocker, siGithub,
+    siDocker,
+    siGithub,
     siGoogle,
     siHtml5,
     siInertia,
@@ -15,7 +16,7 @@ import {
     siSocketdotio,
     siTailwindcss,
     siTypescript,
-} from "simple-icons"
+} from "simple-icons";
 
 const techs = {
     laravel: siLaravel,
