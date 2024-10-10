@@ -18,7 +18,7 @@ export default function ProjectBlock({
 
     return (
         <div
-            className={`sm:flex sm:w-5/6 lg:w-2/3 sm:aspect-[16/9] gap-10 sm:shadow-lg rounded-xl relative bg-cover transition ${isVisible && isDesktop ? "scale-105" : null}`}
+            className={`sm:flex sm:w-5/6 lg:w-2/3 sm:aspect-[16/9] gap-10 sm:shadow-lg rounded-xl relative bg-cover bg-center transition ${isVisible && isDesktop ? "scale-105" : null}`}
             style={isDesktop ? { backgroundImage: `url('${image.src}')` } : {}}
             ref={ref}
         >
