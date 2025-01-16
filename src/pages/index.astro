@@ -13,6 +13,7 @@ import cryptoworld from "../images/projects/cryptoworld.webp";
 import shopTemplate from "../images/projects/shop-template.webp";
 import heroesAdventures from "../images/projects/heroes-adventures.webp";
 import portfolio from "../images/projects/portfolio.webp";
+import cinemaLaravel from "../images/projects/cinema-laravel.webp";
 
 const year = new Date().getFullYear();
 ---
@@ -38,6 +39,16 @@ const year = new Date().getFullYear();
             >
                 My projects
             </h2>
+
+            <ProjectBlock
+                client:idle
+                image={cinemaLaravel}
+                name="Cinema App"
+                description="Cinema is a modern web application for browsing movies currently playing in theaters. The app offering a rich user experience with a seamless combination of backend and frontend technologies. Check out Symfony version of this application."
+                techs={["laravel", "typescript", "tailwind", "docker"]}
+                liveUrl="https://cinema-laravel.damianchojnacki.com"
+                githubUrl="https://github.com/damianchojnacki/cinema-laravel"
+            />
 
             <ProjectBlock
                 client:idle
