@@ -3,24 +3,32 @@ import {
     siBootstrap,
     siCss3,
     siDocker,
+    siGit,
     siGithub,
     siGoogle,
     siHtml5,
     siInertia,
     siJavascript,
+    siJenkins,
     siLaravel,
     siNextdotjs,
+    siPhp,
     siPreact,
     siReact,
     siSass,
     siSocketdotio,
+    siSymfony,
     siTailwindcss,
     siTypescript,
+    siVuedotjs,
 } from "simple-icons";
 
 const techs = {
+    php: siPhp,
     laravel: siLaravel,
+    symfony: siSymfony,
     react: siReact,
+    vue: siVuedotjs,
     preact: siPreact,
     html: siHtml5,
     css: siCss3,
@@ -36,11 +44,13 @@ const techs = {
     inertia: siInertia,
     bootstrap: siBootstrap,
     github: siGithub,
+    git: siGit,
+    jenkins: siJenkins,
 };
 
 export { techs };
 
-export default function (name: keyof typeof techs): any {
+export default function (name: keyof typeof techs, color?: string): any {
     const icon = techs[name];
 
     if (!icon) {
@@ -49,6 +59,6 @@ export default function (name: keyof typeof techs): any {
 
     return {
         html: icon.svg,
-        color: `#${icon.hex}`,
+        color: color ?? `#${icon.hex}`,
     };
 }
