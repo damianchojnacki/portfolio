@@ -34,7 +34,7 @@ export default function ToggleTheme() {
     return (
         <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="h-8 w-8 p-1 bg-white text-black rounded-full hover:scale-105 transition"
+            className="h-8 w-8 p-1 bg-white text-black rounded-full hover:scale-105 transition opacity-50 hover:opacity-100"
         >
             {theme === "light" ? (
                 <Sun class="fill-yellow-500 text-yellow-500" />
