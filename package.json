@@ -12,10 +12,10 @@
         "lint": "astro check"
     },
     "dependencies": {
-        "@astrojs/check": "^0.9.4",
-        "@astrojs/preact": "^3.5.4",
-        "@astrojs/tailwind": "^5.1.5",
-        "astro": "^4.16.18",
+        "@astrojs/check": "^0.9.9",
+        "@astrojs/preact": "^5.1.5",
+        "@astrojs/tailwind": "^6.0.2",
+        "astro": "^6.4.3",
         "lucide-preact": "^0.447.0",
         "preact": "^10.26.2",
         "simple-icons": "^13.21.0",
