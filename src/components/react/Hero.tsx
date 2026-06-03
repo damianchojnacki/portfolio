@@ -9,12 +9,8 @@ export default function Hero() {
         { name: "JavaScript", icon: getTechIcon("javascript") },
         { name: "TypeScript", icon: getTechIcon("typescript") },
         { name: "React", icon: getTechIcon("react") },
-        { name: "Next.js", icon: getTechIcon("next", "white") },
         { name: "Vue", icon: getTechIcon("vue") },
-        { name: "TailwindCSS", icon: getTechIcon("tailwind") },
-        { name: "Git", icon: getTechIcon("git") },
         { name: "Docker", icon: getTechIcon("docker") },
-        { name: "Jenkins", icon: getTechIcon("jenkins") },
     ];
 
     return (
@@ -42,7 +38,7 @@ export default function Hero() {
                 </p>
             </div>
 
-            <div className="grid grid-cols-4 sm:grid-cols-6 gap-y-4 sm:gap-6">
+            <div className="grid grid-cols-4 gap-y-4 sm:gap-6">
                 {skills.map((skill) => (
                     <div
                         key={skill.name}
