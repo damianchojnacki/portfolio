@@ -63,6 +63,10 @@ export default function Hero() {
             </div>
 
             <div className="mb-10 flex justify-center gap-3 text-white">
+                <a href="#about">
+                    <Button>About me</Button>
+                </a>
+
                 <a href="#projects">
                     <Button>View my work</Button>
                 </a>
