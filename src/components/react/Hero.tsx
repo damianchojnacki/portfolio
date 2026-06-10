@@ -14,7 +14,7 @@ export default function Hero() {
     ];
 
     return (
-        <section className="min-h-screen flex flex-col items-center text-white">
+        <section className="min-h-dvh flex flex-col items-center text-white">
             <div className="flex-1 flex flex-col justify-center items-center">
                 <div className="font-['Fira_Mono'] text-center tracking-wider sm:tracking-widest mb-10 md:mb-28 pt-10 md:pt-28">
                     <h1 className="text-4xl sm:text-5xl mb-4 text-left w-min sm:w-auto flex flex-wrap mx-auto gap-2 sm:gap-5">
